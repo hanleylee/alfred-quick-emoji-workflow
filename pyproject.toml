@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "QuickEmoji"
+version = "0.0.1"
+description = "Quick search for emoji"
+documentation = ""
+license = "MIT"
+
+authors = [
+    "HanleyLee <hanley.lei@gmail.com>"
+]
+repository = "https://github.com/hanleylee/alfred-quick-emoji-workflow"
+homepage = "https://github.com/hanleylee/alfred-quick-emoji-workflow"
+readme = ["README.md", "LICENSE"]
+keywords = ["alfred", "emoji", "workflow"]
+
+[tool.poetry.dependencies]
+python = ">=3.9, <4.0"
+fuzzywuzzy = "*"
+python-Levenshtein = "*"
+pydantic = "*"
+requests = "*"

@@ -1,0 +1,8 @@
+[file-build-run]
+command:python=python3 "$(VIM_FILENAME)"
+command:markdown=:MarkdownPreview
+pos=quickfix
+output=terminal
+cwd=$(VIM_FILEDIR)
+
+; vim:ft=dosini:ts=4:sw=4:
