@@ -209,7 +209,7 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>This Alfred Workflow aims to quick find appropriate emoji</string>
 	<key>uidata</key>
 	<dict>
 		<key>001D6658-0FE9-4A29-8B9F-07040C053419</key>
@@ -277,6 +277,10 @@
 		<key>test</key>
 		<string>t1</string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>test</string>
+	</array>
 	<key>version</key>
 	<string>0.0.1</string>
 	<key>webaddress</key>

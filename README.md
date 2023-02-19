@@ -1,6 +1,8 @@
 # Alfred Quick Emoji Workflow
 
-## Introduce
+![GitHub last commit](https://img.shields.io/github/last-commit/hanleylee/alfred-quick-emoji-workflow)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/hanleylee/alfred-quick-emoji-workflow)
+![GitHub](https://img.shields.io/github/license/hanleylee/alfred-quick-emoji-workflow)
 
 This project uses [gemoji](https://github.com/github/gemoji/blob/master/db/emoji.json) as the emoji database, which provides the following functions:
 
