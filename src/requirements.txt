@@ -1,7 +1,0 @@
-alfred-workflow @ git+https://github.com/NorthIsUp/alfred-workflow-py3.git@master ; python_version >= "3.9" and python_version < "4.0"
-certifi==2022.12.7 ; python_version >= "3.9" and python_version < "4"
-charset-normalizer==3.0.1 ; python_version >= "3.9" and python_version < "4"
-idna==3.4 ; python_version >= "3.9" and python_version < "4"
-requests==2.28.2 ; python_version >= "3.9" and python_version < "4"
-six==1.16.0 ; python_version >= "3.9" and python_version < "4.0"
-urllib3==1.26.14 ; python_version >= "3.9" and python_version < "4"

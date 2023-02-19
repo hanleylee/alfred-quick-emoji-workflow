@@ -1,4 +1,3 @@
-import os
 from fuzzywuzzy import fuzz
 from alfred import AlfredList, AlfredListItem, output_to_alfred, Icon
 from variables import QUERY_STR, EMOJI_LIST
