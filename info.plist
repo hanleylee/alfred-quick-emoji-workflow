@@ -5,7 +5,41 @@
 	<key>bundleid</key>
 	<string>com.hanleylee.quick_emoji</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>E154858C-9C6B-494E-B767-9F5059AED47B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1012B4C1-1368-4088-9E00-F37B20524E29</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>001D6658-0FE9-4A29-8B9F-07040C053419</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>FDE00382-910A-42C2-A246-16835CD451F2</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>Hanley Lee</string>
 	<key>description</key>
@@ -19,6 +53,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<true/>
+				<key>skipvarencode</key>
+				<true/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>1012B4C1-1368-4088-9E00-F37B20524E29</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -28,11 +83,11 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>em</string>
+				<string>{var:keyword}</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -50,9 +105,9 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>subtext</string>
+				<string>Input alias or tag of emoji ...</string>
 				<key>title</key>
-				<string>Input description of emoji</string>
+				<string>Emoji Quick Search</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -62,6 +117,25 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>E154858C-9C6B-494E-B767-9F5059AED47B</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>001D6658-0FE9-4A29-8B9F-07040C053419</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -114,11 +188,44 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>FDE00382-910A-42C2-A246-16835CD451F2</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>001D6658-0FE9-4A29-8B9F-07040C053419</key>
+		<dict>
+			<key>xpos</key>
+			<real>530</real>
+			<key>ypos</key>
+			<real>195</real>
+		</dict>
+		<key>1012B4C1-1368-4088-9E00-F37B20524E29</key>
+		<dict>
+			<key>xpos</key>
+			<real>535</real>
+			<key>ypos</key>
+			<real>55</real>
+		</dict>
 		<key>313675C4-0659-4FED-A9A5-99D2EC19E45B</key>
 		<dict>
 			<key>xpos</key>
@@ -133,9 +240,45 @@
 			<key>ypos</key>
 			<real>155</real>
 		</dict>
+		<key>FDE00382-910A-42C2-A246-16835CD451F2</key>
+		<dict>
+			<key>xpos</key>
+			<real>540</real>
+			<key>ypos</key>
+			<real>325</real>
+		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>em</string>
+				<key>placeholder</key>
+				<string>Default: 'em'</string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Keyword to trigger search emoji</string>
+			<key>label</key>
+			<string>Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>keyword</string>
+		</dict>
+	</array>
+	<key>variables</key>
+	<dict>
+		<key>test</key>
+		<string>t1</string>
+	</dict>
+	<key>version</key>
+	<string>0.0.1</string>
 	<key>webaddress</key>
 	<string>https://hanleylee.com</string>
 </dict>

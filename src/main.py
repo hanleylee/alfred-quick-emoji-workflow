@@ -1,13 +1,32 @@
 from fuzzywuzzy import fuzz
 from alfred import AlfredList, AlfredListItem, output_to_alfred, Icon
+from alfred import AlfredListItemMod, AlfredListItemMods
 from variables import QUERY_STR, EMOJI_LIST
+
 
 def generateItem(obj):
     emoji = obj['emoji']
     alias = ', '.join(obj['aliases'])
     tags = ', '.join(obj['tags'])
     icon_name = emoji.encode('unicode-escape').decode('ASCII').replace('\\', '')
-    return AlfredListItem(title=alias, subtitle=tags, arg=emoji, icon=Icon(path=f'src/icons/{icon_name}.png'))
+
+    full_desc = f'''
+    emoji: {emoji}
+    alias: {alias}
+    tags: {tags}
+    unicode: {icon_name}
+    '''
+
+    altMod = AlfredListItemMod(arg=full_desc, subtitle='Copy & Paste Full Info')
+    cmdMod = AlfredListItemMod(arg=emoji, subtitle='Copy & Paste Emoji')
+
+    return AlfredListItem(
+        title=alias,
+        subtitle=tags,
+        arg=f'https://emojipedia.org/search/?q={emoji}',
+        icon=Icon(path=f'icons/{icon_name}.png'),
+        mods=AlfredListItemMods(alt=altMod, cmd=cmdMod)
+    )
 
 
 def main():
@@ -25,6 +44,7 @@ def main():
     listItems = list(map(generateItem, filterd_emoji))
 
     output_to_alfred(alfredlist=AlfredList(items=listItems))
+
 
     # print(emojiInfo['emoji'])
 if __name__ == "__main__":

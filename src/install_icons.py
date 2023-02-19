@@ -15,7 +15,7 @@ def main():
         print(matchlist)
         if matchlist != []:
             b64 = base64.b64decode(matchlist[0])
-            with open(f'icons/{icon_names}.png', "wb") as f:
+            with open(f'../icons/{icon_names}.png', "wb") as f:
                 f.write(b64)
 
     # print(b64)

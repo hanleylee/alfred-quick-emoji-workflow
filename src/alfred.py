@@ -6,6 +6,15 @@ import sys
 class Icon(BaseModel):
     path: str = ''
 
+class AlfredListItemMod(BaseModel):
+    valid: bool = True
+    arg: str = ''
+    subtitle: str = ''
+
+class AlfredListItemMods(BaseModel):
+    alt: AlfredListItemMod = AlfredListItemMod()
+    cmd: AlfredListItemMod = AlfredListItemMod()
+    ctrl: AlfredListItemMod = AlfredListItemMod()
 
 class AlfredListItem(BaseModel):
     title: str
@@ -13,6 +22,7 @@ class AlfredListItem(BaseModel):
     arg: str = ''
     autocomplete: str = ''
     icon: Icon = Icon()
+    mods: AlfredListItemMods()
 
 
 class AlfredList(BaseModel):
