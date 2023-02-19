@@ -14,6 +14,10 @@ Use em as a keyword to search, and after searching the corresponding results, yo
 
 ![himg](imgs/common_search.png)
 
+## Development
+
+Use `make install` to install dependencies
+
 ## Ref
 
 - [gemoji](https://github.com/github/gemoji)
