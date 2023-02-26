@@ -1,6 +1,5 @@
 from fuzzywuzzy import fuzz
-from alfred import AlfredList, AlfredListItem, output_to_alfred, Icon
-from alfred import AlfredListItemMod, AlfredListItemMods
+from alfred import AlfredList, AlfredListItem, output_to_alfred, Icon, AlfredListItemMod, AlfredListItemMods
 from variables import QUERY_STR, EMOJI_LIST
 
 
@@ -18,12 +17,12 @@ def generateItem(obj):
     '''
 
     altMod = AlfredListItemMod(arg=full_desc, subtitle='Copy & Paste Full Info')
-    cmdMod = AlfredListItemMod(arg=emoji, subtitle='Copy & Paste Emoji')
+    cmdMod = AlfredListItemMod(arg=f'https://emojipedia.org/search/?q={emoji}', subtitle='Open "emojipedia.org" to view detail information')
 
     return AlfredListItem(
         title=alias,
         subtitle=tags,
-        arg=f'https://emojipedia.org/search/?q={emoji}',
+        arg=emoji,
         icon=Icon(path=f'icons/{icon_name}.png'),
         mods=AlfredListItemMods(alt=altMod, cmd=cmdMod)
     )

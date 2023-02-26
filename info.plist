@@ -10,7 +10,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1012B4C1-1368-4088-9E00-F37B20524E29</string>
+				<string>001D6658-0FE9-4A29-8B9F-07040C053419</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -20,7 +20,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>001D6658-0FE9-4A29-8B9F-07040C053419</string>
+				<string>1012B4C1-1368-4088-9E00-F37B20524E29</string>
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
@@ -53,23 +53,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>skipqueryencode</key>
+				<key>autopaste</key>
 				<true/>
-				<key>skipvarencode</key>
-				<true/>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
+				<key>clipboardtext</key>
 				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>1012B4C1-1368-4088-9E00-F37B20524E29</string>
+			<string>001D6658-0FE9-4A29-8B9F-07040C053419</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -123,21 +121,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
 				<true/>
-				<key>clipboardtext</key>
+				<key>skipvarencode</key>
+				<true/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
 				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>001D6658-0FE9-4A29-8B9F-07040C053419</string>
+			<string>1012B4C1-1368-4088-9E00-F37B20524E29</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -215,16 +215,16 @@
 		<key>001D6658-0FE9-4A29-8B9F-07040C053419</key>
 		<dict>
 			<key>xpos</key>
-			<real>530</real>
+			<real>545</real>
 			<key>ypos</key>
-			<real>195</real>
+			<real>35</real>
 		</dict>
 		<key>1012B4C1-1368-4088-9E00-F37B20524E29</key>
 		<dict>
 			<key>xpos</key>
-			<real>535</real>
+			<real>545</real>
 			<key>ypos</key>
-			<real>55</real>
+			<real>180</real>
 		</dict>
 		<key>313675C4-0659-4FED-A9A5-99D2EC19E45B</key>
 		<dict>
@@ -243,7 +243,7 @@
 		<key>FDE00382-910A-42C2-A246-16835CD451F2</key>
 		<dict>
 			<key>xpos</key>
-			<real>540</real>
+			<real>545</real>
 			<key>ypos</key>
 			<real>325</real>
 		</dict>
@@ -282,7 +282,7 @@
 		<string>test</string>
 	</array>
 	<key>version</key>
-	<string>0.0.1</string>
+	<string>0.0.2</string>
 	<key>webaddress</key>
 	<string>https://hanleylee.com</string>
 </dict>
