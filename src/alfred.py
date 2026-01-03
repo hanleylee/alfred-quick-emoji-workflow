@@ -22,7 +22,7 @@ class AlfredListItem(BaseModel):
     arg: str = ''
     autocomplete: str = ''
     icon: Icon = Icon()
-    mods: AlfredListItemMods()
+    mods: AlfredListItemMods = AlfredListItemMods()
 
 
 class AlfredList(BaseModel):
